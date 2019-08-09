@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  resources :cocktails, only: %i[index new show create] do
+  resources :cocktails, only: %i[index new show create, destroy] do
     resources :doses, only: %i[new create]
   end
 
